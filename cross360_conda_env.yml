@@ -1,0 +1,18 @@
+name: cross360
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip:
+    - torch==2.0.1+cu118
+    - torchvision==0.15.2+cu118
+    - torchaudio==2.0.2+cu118
+    - --extra-index-url https://download.pytorch.org/whl/cu118
+    - timm
+    - tqdm
+    - scipy
+    - numpy<2.0.0
+    - opencv-python
+    - matplotlib
+    - einops

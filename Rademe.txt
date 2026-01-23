@@ -1,0 +1,32 @@
+Hi, please follow these steps for training/testing our model.
+
+1. Please create a conda environment:
+conda env create -f cross360_conda_env.yml
+
+2. Please download our best model at:
+https://drive.google.com/drive/folders/1WyuX7Zn649tgV6EVgGo-QhJ4A8UTvN1O?usp=sharing
+And save these models to "saved_models/models"
+
+3. Activate the conda environment:
+conda activate cross360
+
+4. Testing on provided data ("./input_data"):
+python evaluate.py
+
+5. The results will be saved at "./results/saved_models/"
+(This will defaultly evaluate the 3D60 data)
+--------------------------------------------------------------------------
+
+Please note, we only provided 3 Matterport3D, 3 Stanford2D3D, and 3 SunCG examples in our folder for limited space.
+
+For downloading 3D60 dataset, please go to:
+https://vcl3d.github.io/3D60/
+
+For downloading Structured3D dataset, please go to:
+https://structured3d-dataset.org/
+
+6. For training our model, please modify the path in our dataset:
+For example, in datasets/dataset3D60.py, function gather_filepaths, change local="./input_data/" with your downloaded path
+
+and run
+python train.py
