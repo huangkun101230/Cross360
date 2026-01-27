@@ -10,7 +10,7 @@
     *Corresponding authors
 
   </p>
-  <h3 align="center"><a href="">Paper</a>
+  <h3 align="center"><a href="https://arxiv.org/abs/2601.17271">Paper</a>
   <div align="center"></div>
 </p>
 
